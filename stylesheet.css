@@ -7,13 +7,14 @@ header , footer{
   top: 0;
   width: 100%;
   color: white;
-  line-height: 40px;
-  font-size: 25px;
+  line-height: 6vh;
+  font-size: 4vh;
   text-align:center;
-  height:40px;
+  height: 6vh;
 }
 
 header {
+  white-space: nowrap;
   background-color: #3cb;
 }
 
@@ -25,6 +26,11 @@ header nav ul li{
   flex-wrap: wrap;
   margin: 0 20px;
   display: inline-block;
+}
+
+header nav ul li i{
+  display: none;
+  color: #1D9BF0;
 }
 
 main a {
@@ -51,4 +57,17 @@ ul {
 
 article {
   padding: 16px;
+}
+
+.fa-brands:before {
+  display: none;
+}
+
+@media all and (max-width: 1000px) {
+  header nav ul li a{
+    display: none;
+  }
+  .fa-brands:before {
+    display: block;
+  }
 }
