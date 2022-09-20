@@ -63,8 +63,20 @@ article {
   display: none;
 }
 
+table {
+  border-collapse: collapse;
+}
+
 td {
   text-align: center;
+}
+
+th, td {
+  border: 1px solid #333;
+}
+
+p span {
+  color: red;
 }
 
 @media all and (max-width: 1000px) {
@@ -74,8 +86,4 @@ td {
   .fa-brands:before {
     display: block;
   }
-}
-
-p span {
-  color: red;
 }
