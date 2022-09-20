@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>ミラティブ攻略</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://use.fontawesome.com/releases/v6.2.0/css/all.css" rel="stylesheet">
+  <link rel="stylesheet" href="./stylesheet.css">
+  <script type="text/javascript" src="./script.js"></script>
+</head>
+<body>
+  <!--へっだぁ-->
+  <header>
+    <a href="/">ミラティブ攻略</a>
+    <nav>
+      <ul>
+        <li><i class="fa-brands fa-twitter"></i> <a href="https://twitter.com/haruto05442010">Twitter</a></li>
+        <li><i class="fa-brands fa-discord"></i> <a href="https://discord.gg/4z8jXjUryt">Discord</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!--へっだぁ-->
+  <main>
+    <article>
+      <h1>ミラティブのヌシ釣り！</h1>
+
+      <p>各場所のヌシ1体当たりのマニー</p>
+      <ul>
+        <li>陸地：約2000マニー</li>
+        <li>砂浜：約2700マニー</li>
+        <li>雪山：約4000マニー</li>
+      </ul>
+
+      <p>数字を入力するとヌシを倒すまでにかかる<span>おおよそ</span>の時間を表示します！</p>
+      <form oninput="func1();">
+        <ul>
+          <li>皆の平均攻撃力：<input type="number" id="ATK" size="5"></li>
+          <li>人数：<input type="number" id="PEOPLE" size="5"></li>
+        </ul>
+      </form>
+
+      <table border="1">
+        <tr>
+          <th>場所</th><th>ヌシを倒す時間</th><th>釣りも含めた時間</th>
+        </tr>
+        <tr>
+          <td>陸地</td>
+          <td><span id="land">0</span>秒</td>
+          <td><span id="land2">0</span>秒</td>
+        </tr>
+        <tr>
+          <td>砂浜</td>
+          <td><span id="beach">0</span>秒</td>
+          <td><span id="beach2">0</span>秒</td>
+        </tr>
+        <tr>
+          <td>雪山</td>
+          <td><span id="snow">0</span>秒</td>
+          <td><span id="snow2">0</span>秒</td>
+        </tr>
+      </table>
+
+      <p>ヌシを倒す時間が240秒以上だと大体タイムアップになります。</p>
+      <p>釣りも含めた時間を比較したとき約<span>２</span>倍だった場合秒数の低いところに行くべきです！</p>
+      <p>例：皆の平均攻撃力：4000、人数：5</p>
+      <table border="1">
+        <tr>
+          <th>場所</th><th>ヌシを倒す時間</th><th>釣りも含めた時間</th>
+        </tr>
+        <tr>
+          <td>陸地</td>
+          <td>22.5秒</td>
+          <td>113秒</td>
+        </tr>
+        <tr>
+          <td>砂浜</td>
+          <td>125秒</td>
+          <td>215秒</td>
+        </tr>
+        <tr>
+          <td>雪山</td>
+          <td>430秒</td>
+          <td>520秒</td>
+        </tr>
+      </table>
+      <p>この場合、砂浜のヌシを<span>１</span>体倒す間に、陸地のヌシを<span>２</span>体倒せるので陸地に行くべきである。</p>
+    </article>
+  </main>
+  <!--ふったぁ-->
+  <footer>
+    <a href="/">ミラティブ攻略</a>
+    <a href="/privacy/">プライバシーポリシー</a>
+  </footer>
+  <!--ふったぁ-->
+</body>
